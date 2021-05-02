@@ -6,10 +6,11 @@ import net.minecraft.util.text.TextFormatting;
 import slimeknights.tconstruct.library.materials.Material;
 import slimeknights.tconstruct.library.materials.MaterialTypes;
 import slimeknights.tconstruct.library.traits.AbstractTrait;
+import slimeknights.tconstruct.tools.traits.TraitEndspeed;
+import slimeknights.tconstruct.tools.traits.TraitMomentum;
 
 import static com.sosnitzka.taiga.Fluids.obsidioriteFluid;
-import static slimeknights.tconstruct.tools.TinkerTraits.alien;
-import static slimeknights.tconstruct.tools.TinkerTraits.crumbling;
+import static slimeknights.tconstruct.tools.TinkerTraits.*;
 
 public class MaterialTraits {
 
@@ -38,6 +39,9 @@ public class MaterialTraits {
     public static final AbstractTrait dissolving = new TraitDissolving();
     public static final AbstractTrait arcane = new TraitArcane();
     public static final AbstractTrait psychotic = new TraitPsychotic();
+    public static final AbstractTrait skystrider = new TraitSkyStrider();
+    public static final AbstractTrait emberflame = new TraitEmberFlame();
+    public static final AbstractTrait worldsmash = new TraitWorldSmash();
     public static final AbstractTrait heroic = new TraitHeroic();
     public static final AbstractTrait hollow = new TraitHollow();
     public static final AbstractTrait diffuse = new TraitDiffuse();
@@ -65,7 +69,9 @@ public class MaterialTraits {
      * .addTrait(z)
      */
 
-    public static Material psychonium = new Material("psychonium", TextFormatting.GRAY).addTrait(psychotic).addTrait(resonance).addTrait(slaughtering);
+    public static Material psychonium = new Material("psychonium", TextFormatting.GRAY).addTrait(psychotic, MaterialTypes.HEAD).addTrait(ecological).addTrait(naturebound);
+    public static Material emberium = new Material("emberium", TextFormatting.GRAY).addTrait(emberflame, MaterialTypes.HEAD).addTrait(worldsmash);
+    public static Material skylerite = new Material("skylerite", TextFormatting.GRAY).addTrait(skystrider, MaterialTypes.HEAD).addTrait(momentum);
 
     public static Material tiberium = new Material("tiberium", TextFormatting.GREEN).addTrait(instable);
     public static Material aurorium = new Material("aurorium", TextFormatting.RED).addTrait(arcane);

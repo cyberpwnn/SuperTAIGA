@@ -1,3 +1,13 @@
+tile.skylerite_ore.name=Skylerite Ore
+tile.skylerite_block.name=Skylerite Block
+material.skylerite.name=Skylerite
+item.skylerite_nugget.name=Skylerite Nugget
+item.skylerite_dust.name=Skylerite Dust
+item.skylerite_ingot.name=Skylerite Ingot
+fluid.tconstruct.skylerite_fluid.name=Skylerite Fluid
+modifier.skystrider.name=Sky Strider
+
+modifier.psychotic.name=Psychotic
 tile.psychonium_ore.name=Psychonium Ore
 tile.psychonium_block.name=Psychonium Block
 material.psychonium.name=Psychonium
@@ -5,6 +15,15 @@ item.psychonium_nugget.name=Psychonium Nugget
 item.psychonium_dust.name=Psychonium Dust
 item.psychonium_ingot.name=Psychonium Ingot
 fluid.tconstruct.psychonium_fluid.name=Psychonium Fluid
+
+modifier.emberflame.name=Emberflame
+tile.emberium_ore.name=Emberium Ore
+tile.emberium_block.name=Emberium Block
+material.emberium.name=Emberium
+item.emberium_nugget.name=Emberium Nugget
+item.emberium_dust.name=Emberium Dust
+item.emberium_ingot.name=Emberium Ingot
+fluid.tconstruct.emberium_fluid.name=Emberium Fluid
 
 modifier.informations=Informations
 material.basalt.name=Basalt

@@ -16,6 +16,10 @@ public class Fluids {
 
     public static BasicTinkerFluid psychoniumFluid = new BasicTinkerFluid("psychonium_fluid", 0xFF003B6F, 3050, 10,
             10000);
+    public static BasicTinkerFluid emberiumFluid = new BasicTinkerFluid("emberium_fluid", 0xFFFF0000, 3050, 10,
+            10000);
+    public static BasicTinkerFluid skyleriteFluid = new BasicTinkerFluid("skylerite_fluid", 0xFF00e1ff, 3050, 10,
+            10000);
 
     public static BasicTinkerFluid basaltFluid = new BasicTinkerFluid("basalt_fluid", 0xFFe4ddc3, 550, 10, 6000);
     public static BasicTinkerFluid tiberiumFluid = new BasicTinkerFluid("tiberium_fluid", 0xFFd4ff00, 400, 10, 8000);

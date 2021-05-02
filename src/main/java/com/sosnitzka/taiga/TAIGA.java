@@ -96,14 +96,16 @@ public class TAIGA {
     private void registerTinkerMaterials() {
         BowMaterialStats shitty = new BowMaterialStats(0.2f, 0.4f, -1f);
 //
-        integrateMaterial("Psychonium", psychonium, psychoniumFluid, 1000, 7.62f, 7.1f, 1.8f, 150, 150, VIBRANIUM, 1.1f, 1.8f, 6);
+        integrateMaterial("Psychonium", psychonium, psychoniumFluid, 3100, 14.62f, 11.1f, 1.8f, 150, 150, VIBRANIUM, 1.1f, 1.8f, 6);
+        integrateMaterial("Skylerite", skylerite, skyleriteFluid, 1950, 26.62f, 11.1f, 1.2f, 150, 150, VIBRANIUM, 0.6f, 2.8f, 7);
+        integrateMaterial("Emberium", emberium, emberiumFluid, 4650, 11.62f, 18.1f, 1.9f, 350, 350, VIBRANIUM, 1.1f, 2.8f, 12);
+        integrateMaterial("Vibranium", vibranium, vibraniumFluid, 2835, 11.62f, 14.1f, 2.3f, 350, 250, VIBRANIUM, 2.1f, 4.8f, 8);
 
         integrateMaterial("Tiberium", tiberium, tiberiumFluid, 80, 3.3f, 4f, 0.7f, -25, 50, DIAMOND, shitty, true, false);
         integrateMaterial("Aurorium", aurorium, auroriumFluid, 750, 3.6f, 3.78f, 0.77f, 25, 130, COBALT, 0.45f, 1f, 1);
         integrateMaterial("Prometheum", prometheum, prometheumFluid, 844, 4.75f, 6.6f, 1.2f, 25, 50, DURANITE, 0.2f, 0.6f, 3);
         integrateMaterial("Duranite", duranite, duraniteFluid, 1550, 3.2f, 3.2f, 1.16f, 100, 100, DURANITE, 0.3f, 1.4f, 2);
         integrateMaterial("Valyrium", valyrium, valyriumFluid, 1111, 5.37f, 4.8f, 1.30f, 100, 100, VALYRIUM, 1.1f, 1.2f, 4);
-        integrateMaterial("Vibranium", vibranium, vibraniumFluid, 4835, 11.62f, 14.1f, 2.3f, 350, 250, VIBRANIUM, 2.1f, 4.8f, 8);
         integrateMaterial("Terrax", terrax, terraxFluid, 444, 4.77f, 2.9f, 0.8f, 100, 50, COBALT, shitty, true, true);
         integrateMaterial("Palladium", palladium, palladiumFluid, 797, 4.35f, 6.8f, 1.3f, 130, -50, DURANITE, .5f, .2f, 3);
         integrateMaterial("Uru", uru, uruFluid, 877, 2f, 7.2f, 1.5f, -50, 175, VALYRIUM, 1.3f, 0.8f, 6);

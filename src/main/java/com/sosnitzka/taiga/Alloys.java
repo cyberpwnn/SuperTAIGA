@@ -14,6 +14,8 @@ public class Alloys {
      */
     public static void register() {
         registerTinkerAlloy(new FluidStack(psychoniumFluid, 4), new FluidStack(vibraniumFluid, 3), new FluidStack(niobFluid, 1));
+        registerTinkerAlloy(new FluidStack(skyleriteFluid, 4), new FluidStack(vibraniumFluid, 3), new FluidStack(adamantFluid, 1));
+        registerTinkerAlloy(new FluidStack(emberiumFluid, 3), new FluidStack(psychoniumFluid, 1), new FluidStack(skyleriteFluid, 1), new FluidStack(terraxFluid, 1));
 
         registerTinkerAlloy(new FluidStack(terraxFluid, 2), new FluidStack(karmesineFluid, 1), new FluidStack
                 (oviumFluid, 1), new FluidStack(jauxumFluid, 1));

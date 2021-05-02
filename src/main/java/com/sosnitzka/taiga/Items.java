@@ -15,11 +15,17 @@ import java.util.Arrays;
 import static com.sosnitzka.taiga.util.Utils.*;
 
 public class Items {
-
+    public static Item skyleriteIngot = new BasicItem("skylerite_ingot", PREFIX_INGOT);
+    public static Item skyleriteDust = new BasicItem("skylerite_dust", PREFIX_DUST);
+    public static Item skyleriteNugget = new BasicItem("skylerite_nugget", PREFIX_NUGGET);
 
     public static Item psychoniumIngot = new BasicItem("psychonium_ingot", PREFIX_INGOT);
     public static Item psychoniumDust = new BasicItem("psychonium_dust", PREFIX_DUST);
     public static Item psychoniumNugget = new BasicItem("psychonium_nugget", PREFIX_NUGGET);
+
+    public static Item emberiumIngot = new BasicItem("emberium_ingot", PREFIX_INGOT);
+    public static Item emberiumDust = new BasicItem("emberium_dust", PREFIX_DUST);
+    public static Item emberiumNugget = new BasicItem("emberium_nugget", PREFIX_NUGGET);
 
 
     public static Item ironNugget = new BasicItem("iron_nugget", PREFIX_NUGGET);
