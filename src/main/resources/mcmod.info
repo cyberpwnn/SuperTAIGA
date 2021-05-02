@@ -1,0 +1,14 @@
+[{
+  "modid": "taiga",
+  "name": "Tinkers Alloying Addon",
+  "description": "An addon for Tinkers' Construct! 32 New Materials including 16 various alloys.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://gitlab.harting.hosting/TeamFRM/TAIGA",
+  "updateUrl": "",
+  "authorList": ["Zkaface", "Chefe"],
+  "credits": "Chefe. He's there, if you need him. Sometimes.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": ["tconstruct"]
+}]
