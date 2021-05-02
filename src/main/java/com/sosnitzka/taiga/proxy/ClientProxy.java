@@ -93,6 +93,12 @@ public class ClientProxy extends CommonProxy {
         else if (material.equals(uru)) metalRender(material, uruFluid.getColor(), 1.0f, 1.0f, 0.3f);
         else if (material.equals(imperomite)) metalRender(material, imperomiteFluid.getColor(), 0.4f, 1.0f, 0.7f);
         else if (material.equals(vibranium)) metalRender(material, vibraniumFluid.getColor(), 0.6f, .8f, 1f);
+        else if (material.equals(psychonium)) metalRender(material, psychoniumFluid.getColor(), 0.6f, .8f, 1f);
+        else if (material.equals(pure)) metalRender(material, pureFluid.getColor(), 0.6f, .8f, 1f);
+        else if (material.equals(emberium)) metalRender(material, emberiumFluid.getColor(), 0.6f, .8f, 1f);
+        else if (material.equals(skylerite)) metalRender(material, skyleriteFluid.getColor(), 0.6f, .8f, 1f);
+        else if (material.equals(cyberium)) metalRender(material, cyberiumFluid.getColor(), 0.6f, .8f, 1f);
+        else if (material.equals(auram)) metalRender(material, auramFluid.getColor(), 0.6f, .8f, 1f);
         else if (material.equals(valyrium)) metalRender(material, valyriumFluid.getColor(), .8f, 1.5f, -0.1f);
         else {
             material.setRenderInfo(new MaterialRenderInfo.BlockTexture(new ResourceLocation("taiga:blocks/block/" +

@@ -110,7 +110,6 @@ public class Blocks {
     public static Block yrdeenBlock = new BasicBlock("yrdeen_block", Material.ROCK, 15.0f, 25f, VALYRIUM, PREFIX_BLOCK);
     public static Block ioxBlock = new BasicBlock("iox_block", Material.ROCK, 20.0f, 25f, DURANITE, PREFIX_BLOCK);
 
-
     public static Block blockMeteoriteCobble = new BlockCobble("meteoritecobble_block", Material.ROCK, 20f, 10f,
             COBALT, 0.075f, PREFIX_BLOCK);
     public static Block blockObsidioriteCobble = new BlockCobble("obsidioritecobble_block", Material.ROCK, 25f, 20f,
