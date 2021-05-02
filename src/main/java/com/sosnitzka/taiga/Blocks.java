@@ -23,6 +23,13 @@ import static com.sosnitzka.taiga.util.Utils.PREFIX_ORE;
 import static slimeknights.tconstruct.library.utils.HarvestLevels.*;
 
 public class Blocks {
+    public static Block auramBlock = new BasicBlock("auram_block", Material.ROCK, 20.0f, 3000f, VIBRANIUM,
+            PREFIX_BLOCK);
+    public static Block pureBlock = new BasicBlock("pure_block", Material.ROCK, 20.0f, 3000f, VIBRANIUM,
+            PREFIX_BLOCK);
+    public static Block cyberiumBlock = new BasicBlock("cyberium_block", Material.ROCK, 20.0f, 3000f, VIBRANIUM,
+            PREFIX_BLOCK);
+
     public static Block psychoniumBlock = new BasicBlock("psychonium_block", Material.ROCK, 20.0f, 3000f, VIBRANIUM,
             PREFIX_BLOCK);
     public static Block emberiumBlock = new BasicBlock("emberium_block", Material.ROCK, 20.0f, 3000f, VIBRANIUM,

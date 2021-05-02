@@ -1,3 +1,27 @@
+tile.pure_ore.name=Pure Ore
+tile.pure_block.name=Pure Block
+material.pure.name=Pure
+item.pure_nugget.name=Pure Nugget
+item.pure_dust.name=Pure Dust
+item.pure_ingot.name=Pure Ingot
+fluid.tconstruct.pure_fluid.name=Pure Fluid
+
+tile.auram_ore.name=Auram Ore
+tile.auram_block.name=Auram Block
+material.auram.name=Auram
+item.auram_nugget.name=Auram Nugget
+item.auram_dust.name=Auram Dust
+item.auram_ingot.name=Auram Ingot
+fluid.tconstruct.auram_fluid.name=Auram Fluid
+
+tile.cyberium_ore.name=Cyber Ore
+tile.cyberium_block.name=Cyber Block
+material.cyberium.name=Cyber
+item.cyberium_nugget.name=Cyber Nugget
+item.cyberium_dust.name=Cyber Dust
+item.cyberium_ingot.name=Cyber Ingot
+fluid.tconstruct.cyberium_fluid.name=Cyber Fluid
+
 tile.skylerite_ore.name=Skylerite Ore
 tile.skylerite_block.name=Skylerite Block
 material.skylerite.name=Skylerite
@@ -10,7 +34,7 @@ modifier.skystrider.name=Sky Strider
 modifier.psychotic.name=Psychotic
 tile.psychonium_ore.name=Psychonium Ore
 tile.psychonium_block.name=Psychonium Block
-material.psychonium.name=Psychonium
+material.psychonium.name=Psycho
 item.psychonium_nugget.name=Psychonium Nugget
 item.psychonium_dust.name=Psychonium Dust
 item.psychonium_ingot.name=Psychonium Ingot

@@ -13,6 +13,11 @@ public class CraftingRegistry {
 
     public static void register() {
         convertion(Item.getItemFromBlock(Blocks.psychoniumBlock), Items.psychoniumIngot, Items.psychoniumNugget);
+        convertion(Item.getItemFromBlock(Blocks.emberiumBlock), Items.emberiumIngot, Items.emberiumNugget);
+        convertion(Item.getItemFromBlock(Blocks.cyberiumBlock), Items.cyberiumIngot, Items.cyberiumNugget);
+        convertion(Item.getItemFromBlock(Blocks.pureBlock), Items.pureIngot, Items.pureNugget);
+        convertion(Item.getItemFromBlock(Blocks.skyleriteBlock), Items.skyleriteIngot, Items.skyleriteNugget);
+        convertion(Item.getItemFromBlock(Blocks.auramBlock), Items.auramIngot, Items.auramNugget);
 
         convertion(Item.getItemFromBlock(Blocks.tiberiumBlock), Items.tiberiumIngot, Items.tiberiumNugget);
         convertion(Item.getItemFromBlock(Blocks.auroriumBlock), Items.auroriumIngot, Items.auroriumNugget);

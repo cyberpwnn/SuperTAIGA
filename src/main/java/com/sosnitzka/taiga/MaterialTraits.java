@@ -72,6 +72,9 @@ public class MaterialTraits {
     public static Material psychonium = new Material("psychonium", TextFormatting.GRAY).addTrait(psychotic, MaterialTypes.HEAD).addTrait(ecological).addTrait(naturebound);
     public static Material emberium = new Material("emberium", TextFormatting.GRAY).addTrait(emberflame, MaterialTypes.HEAD).addTrait(worldsmash);
     public static Material skylerite = new Material("skylerite", TextFormatting.GRAY).addTrait(skystrider, MaterialTypes.HEAD).addTrait(momentum);
+    public static Material auram = new Material("auram", TextFormatting.GRAY);
+    public static Material pure = new Material("pure", TextFormatting.GRAY);
+    public static Material cyberium = new Material("cyberium", TextFormatting.GRAY);
 
     public static Material tiberium = new Material("tiberium", TextFormatting.GREEN).addTrait(instable);
     public static Material aurorium = new Material("aurorium", TextFormatting.RED).addTrait(arcane);

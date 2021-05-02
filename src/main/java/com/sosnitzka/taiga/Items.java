@@ -15,6 +15,18 @@ import java.util.Arrays;
 import static com.sosnitzka.taiga.util.Utils.*;
 
 public class Items {
+    public static Item pureIngot = new BasicItem("pure_ingot", PREFIX_INGOT);
+    public static Item pureDust = new BasicItem("pure_dust", PREFIX_DUST);
+    public static Item pureNugget = new BasicItem("pure_nugget", PREFIX_NUGGET);
+
+    public static Item auramIngot = new BasicItem("auram_ingot", PREFIX_INGOT);
+    public static Item auramDust = new BasicItem("auram_dust", PREFIX_DUST);
+    public static Item auramNugget = new BasicItem("auram_nugget", PREFIX_NUGGET);
+
+    public static Item cyberiumIngot = new BasicItem("cyberium_ingot", PREFIX_INGOT);
+    public static Item cyberiumDust = new BasicItem("cyberium_dust", PREFIX_DUST);
+    public static Item cyberiumNugget = new BasicItem("cyberium_nugget", PREFIX_NUGGET);
+
     public static Item skyleriteIngot = new BasicItem("skylerite_ingot", PREFIX_INGOT);
     public static Item skyleriteDust = new BasicItem("skylerite_dust", PREFIX_DUST);
     public static Item skyleriteNugget = new BasicItem("skylerite_nugget", PREFIX_NUGGET);
@@ -26,7 +38,6 @@ public class Items {
     public static Item emberiumIngot = new BasicItem("emberium_ingot", PREFIX_INGOT);
     public static Item emberiumDust = new BasicItem("emberium_dust", PREFIX_DUST);
     public static Item emberiumNugget = new BasicItem("emberium_nugget", PREFIX_NUGGET);
-
 
     public static Item ironNugget = new BasicItem("iron_nugget", PREFIX_NUGGET);
 
