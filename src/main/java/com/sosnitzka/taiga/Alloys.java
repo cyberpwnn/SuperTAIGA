@@ -13,6 +13,8 @@ public class Alloys {
      * Registers alloying in the smeltery
      */
     public static void register() {
+        registerTinkerAlloy(new FluidStack(psychoniumFluid, 4), new FluidStack(vibraniumFluid, 3), new FluidStack(niobFluid, 1));
+
         registerTinkerAlloy(new FluidStack(terraxFluid, 2), new FluidStack(karmesineFluid, 1), new FluidStack
                 (oviumFluid, 1), new FluidStack(jauxumFluid, 1));
         registerTinkerAlloy(new FluidStack(triberiumFluid, 1), new FluidStack(tiberiumFluid, 5), new FluidStack

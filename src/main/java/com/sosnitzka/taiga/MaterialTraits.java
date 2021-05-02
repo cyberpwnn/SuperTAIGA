@@ -37,6 +37,7 @@ public class MaterialTraits {
     public static final AbstractTrait fragile = new TraitFragile();
     public static final AbstractTrait dissolving = new TraitDissolving();
     public static final AbstractTrait arcane = new TraitArcane();
+    public static final AbstractTrait psychotic = new TraitPsychotic();
     public static final AbstractTrait heroic = new TraitHeroic();
     public static final AbstractTrait hollow = new TraitHollow();
     public static final AbstractTrait diffuse = new TraitDiffuse();
@@ -63,6 +64,8 @@ public class MaterialTraits {
      * .addTrait(x, HandleMaterialStats.TYPE).addTrait(y, HeadMaterialStats.TYPE)
      * .addTrait(z)
      */
+
+    public static Material psychonium = new Material("psychonium", TextFormatting.GRAY).addTrait(psychotic).addTrait(resonance).addTrait(slaughtering);
 
     public static Material tiberium = new Material("tiberium", TextFormatting.GREEN).addTrait(instable);
     public static Material aurorium = new Material("aurorium", TextFormatting.RED).addTrait(arcane);

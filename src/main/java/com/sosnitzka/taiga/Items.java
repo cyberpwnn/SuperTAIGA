@@ -16,6 +16,12 @@ import static com.sosnitzka.taiga.util.Utils.*;
 
 public class Items {
 
+
+    public static Item psychoniumIngot = new BasicItem("psychonium_ingot", PREFIX_INGOT);
+    public static Item psychoniumDust = new BasicItem("psychonium_dust", PREFIX_DUST);
+    public static Item psychoniumNugget = new BasicItem("psychonium_nugget", PREFIX_NUGGET);
+
+
     public static Item ironNugget = new BasicItem("iron_nugget", PREFIX_NUGGET);
 
     public static Item tiberiumIngot = new BasicItem("tiberium_ingot", PREFIX_INGOT);

@@ -14,6 +14,9 @@ import static com.sosnitzka.taiga.util.Utils.registerFluid;
 
 public class Fluids {
 
+    public static BasicTinkerFluid psychoniumFluid = new BasicTinkerFluid("psychonium_fluid", 0xFF003B6F, 3050, 10,
+            10000);
+
     public static BasicTinkerFluid basaltFluid = new BasicTinkerFluid("basalt_fluid", 0xFFe4ddc3, 550, 10, 6000);
     public static BasicTinkerFluid tiberiumFluid = new BasicTinkerFluid("tiberium_fluid", 0xFFd4ff00, 400, 10, 8000);
     public static BasicTinkerFluid auroriumFluid = new BasicTinkerFluid("aurorium_fluid", 0xFFefae94, 750, 10, 10000);
@@ -23,6 +26,7 @@ public class Fluids {
     public static BasicTinkerFluid valyriumFluid = new BasicTinkerFluid("valyrium_fluid", 0xFFe85c31, 1915, 10, 10000);
     public static BasicTinkerFluid vibraniumFluid = new BasicTinkerFluid("vibranium_fluid", 0xFFbad2d9, 3050, 10,
             10000);
+
     public static BasicTinkerFluid karmesineFluid = new BasicTinkerFluid("karmesine_fluid", 0xFFeb484a, 750, 10, 9000);
     public static BasicTinkerFluid jauxumFluid = new BasicTinkerFluid("jauxum_fluid", 0xFF68c663, 750, 10, 9000);
     public static BasicTinkerFluid oviumFluid = new BasicTinkerFluid("ovium_fluid", 0xFF7d77c3, 750, 10, 9000);

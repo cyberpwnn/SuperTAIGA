@@ -125,22 +125,7 @@ public class WorldGen implements IWorldGenerator {
     
     /** Spawns nether/end ores in the Overworld if the server has allow-nether set to 0 WIP: needs alternate textures */
     private void worldNetherless(Random random, int x, int z, World world) {
-        Generator.generateCube(true, uruOre.getDefaultState(), blockObsidiorite.getDefaultState(), random, x, z,
-                world, URU_VAL, 2, 0, 96, 3);
-        Generator.generateOre(auroriumOre.getDefaultState(), BlockStone.EnumType.DIORITE, random, x, z, world,
-                AURORIUM_VAL, 8, 48, 2, 4);
-        Generator.generateOre(palladiumOre.getDefaultState(), BlockStone.EnumType.DIORITE, random, x, z,
-                world, PALLADIUM_VAL, 12, 64, 2, 4);
-        Generator.generateOreDescending(newArrayList(Blocks.BEDROCK.getDefaultState()), abyssumOre.getDefaultState(), random, x, z,
-                world, ABYSSUM_VAL, 4, 6);
-        Generator.generateOre(tiberiumOre.getDefaultState(), BlockStone.EnumType.GRANITE, random, x, z,
-                world, TIBERIUM_VAL, 16, 128, 10, 35);
-        Generator.generateOre(prometheumOre.getDefaultState(), BlockStone.EnumType.GRANITE, random, x, z,
-                world, PROMETHEUM_VAL, 0, 32, 2, 4);
-        Generator.generateOre(valyriumOre.getDefaultState(), BlockStone.EnumType.GRANITE, random, x, z,
-                world, VALYRIUM_VAL, 0, 128, 2, 4);
-        Generator.generateOre(newArrayList(Blocks.LAVA.getDefaultState(), Blocks.FLOWING_LAVA.getDefaultState()), 
-        		osramOre.getDefaultState(), random, x, z, world, OSRAM_VAL, 0, 64, 15);
+
     }
 
     @Override
@@ -154,11 +139,6 @@ public class WorldGen implements IWorldGenerator {
                 break;
             case 0:
                 world(random, x, z, world);
-                if(!net.minecraft.server.MinecraftServer.getAllowNether()) {
-                	
-                	/** worldNetherless generates nether/end ores in overworld */
-                	worldNetherless(random, x, z, world);
-                }
                 break;
             case 1:
                 end(random, x, z, world);

@@ -12,6 +12,8 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class CraftingRegistry {
 
     public static void register() {
+        convertion(Item.getItemFromBlock(Blocks.psychoniumBlock), Items.psychoniumIngot, Items.psychoniumNugget);
+
         convertion(Item.getItemFromBlock(Blocks.tiberiumBlock), Items.tiberiumIngot, Items.tiberiumNugget);
         convertion(Item.getItemFromBlock(Blocks.auroriumBlock), Items.auroriumIngot, Items.auroriumNugget);
         convertion(Item.getItemFromBlock(Blocks.prometheumBlock), Items.prometheumIngot, Items.prometheumNugget);

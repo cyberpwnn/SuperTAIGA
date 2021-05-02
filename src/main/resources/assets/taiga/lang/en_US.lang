@@ -1,5 +1,12 @@
-modifier.informations=Informations
+tile.psychonium_ore.name=Psychonium Ore
+tile.psychonium_block.name=Psychonium Block
+material.psychonium.name=Psychonium
+item.psychonium_nugget.name=Psychonium Nugget
+item.psychonium_dust.name=Psychonium Dust
+item.psychonium_ingot.name=Psychonium Ingot
+fluid.tconstruct.psychonium_fluid.name=Psychonium Fluid
 
+modifier.informations=Informations
 material.basalt.name=Basalt
 material.dilithium.name=Dilithium
 material.tiberium.name=Tiberium
@@ -39,6 +46,7 @@ material.meteorite.name=Meteorite
 material.obsidiorite.name=Obsidiorite
 material.magma.name=Magma
 material.nitronite.name=Nitronit
+
 
 tile.basalt_block.name=Basalt Block
 tile.dilithium_block.name=Dilithium Block
@@ -82,8 +90,6 @@ tile.nitronite_block.name=Nitronite Block
 tile.meteoritecobble_block.name=Meteorite Cobble Block
 tile.obsidioritecobble_block.name=Meteorite Cobble Block
 
-
-
 tile.basalt_ore.name=Basalt Ore
 tile.tiberium_ore.name=Tiberium Ore
 tile.dilithium_ore.name=Dilithium Ore
@@ -126,6 +132,8 @@ tile.nitronite_ore.name=Nitronite Ore
 
 item.dilithium_crystal.name=Dilithium Crystal
 item.tiberium_crystal.name=Tiberium Crystal
+
+
 
 
 item.basalt_nugget.name=Basalt Nugget
