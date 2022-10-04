@@ -12,6 +12,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class CraftingRegistry {
 
     public static void register() {
+        convertion(Item.getItemFromBlock(Blocks.vatuuniumBlock), Items.vatuuniumIngot, Items.vatuuniumNugget);
         convertion(Item.getItemFromBlock(Blocks.psychoniumBlock), Items.psychoniumIngot, Items.psychoniumNugget);
         convertion(Item.getItemFromBlock(Blocks.emberiumBlock), Items.emberiumIngot, Items.emberiumNugget);
         convertion(Item.getItemFromBlock(Blocks.cyberiumBlock), Items.cyberiumIngot, Items.cyberiumNugget);

@@ -101,6 +101,7 @@ public class ClientProxy extends CommonProxy {
         else if (material.equals(valyrium)) metalRender(material, valyriumFluid.getColor(), .8f, 1.5f, -0.1f);
         // custom
         else if (material.equals(psychonium)) metalRender(material, psychoniumFluid.getColor(), 0.6f, .8f, 0f);
+        else if (material.equals(vatuunium)) metalRender(material, vatuuniumFluid.getColor(), 0.6f, .8f, 0f);
         else if (material.equals(pure)) metalRender(material, Color.red.getRGB(), 0.8f, .8f, 10f);
         else if (material.equals(emberium)) metalRender(material, emberiumFluid.getColor(), 0.6f, .8f, 0f);
         else if (material.equals(skylerite)) metalRender(material, skyleriteFluid.getColor(), 0.6f, .8f, 0f);

@@ -41,19 +41,19 @@ public class Blocks {
     public static Block skyleriteBlock = new BasicBlock("skylerite_block", Material.ROCK, 20.0f, 3000f, VIBRANIUM,
         PREFIX_BLOCK);
 
-    public static Block auramOre = new BasicBlock("aurorium_ore", Material.ROCK, 15.0f, 12f, COBALT, 0.2f,
+    public static Block auramOre = new BasicBlock("auram_ore", Material.ROCK, 15.0f, 12f, COBALT, 0.2f,
         PREFIX_ORE);
-    public static Block vatuuniumOre = new BasicBlock("aurorium_ore", Material.ROCK, 15.0f, 12f, COBALT, 0.2f,
+    public static Block vatuuniumOre = new BasicBlock("vatuunium_ore", Material.ROCK, 15.0f, 12f, COBALT, 0.2f,
         PREFIX_ORE);
-    public static Block pureOre = new BasicBlock("aurorium_ore", Material.ROCK, 15.0f, 12f, COBALT, 0.2f,
+    public static Block pureOre = new BasicBlock("pure_ore", Material.ROCK, 15.0f, 12f, COBALT, 0.2f,
         PREFIX_ORE);
-    public static Block cyberiumOre = new BasicBlock("aurorium_ore", Material.ROCK, 15.0f, 12f, COBALT, 0.2f,
+    public static Block cyberiumOre = new BasicBlock("cyberium_ore", Material.ROCK, 15.0f, 12f, COBALT, 0.2f,
         PREFIX_ORE);
-    public static Block psychoniumOre = new BasicBlock("aurorium_ore", Material.ROCK, 15.0f, 12f, COBALT, 0.2f,
+    public static Block psychoniumOre = new BasicBlock("psychonium_ore", Material.ROCK, 15.0f, 12f, COBALT, 0.2f,
         PREFIX_ORE);
-    public static Block emberiumOre = new BasicBlock("aurorium_ore", Material.ROCK, 15.0f, 12f, COBALT, 0.2f,
+    public static Block emberiumOre = new BasicBlock("emberium_ore", Material.ROCK, 15.0f, 12f, COBALT, 0.2f,
         PREFIX_ORE);
-    public static Block skyleriteOre = new BasicBlock("aurorium_ore", Material.ROCK, 15.0f, 12f, COBALT, 0.2f,
+    public static Block skyleriteOre = new BasicBlock("skylerite_ore", Material.ROCK, 15.0f, 12f, COBALT, 0.2f,
         PREFIX_ORE);
 
 
