@@ -13,9 +13,21 @@ public class Alloys {
      * Registers alloying in the smeltery
      */
     public static void register() {
+        registerTinkerAlloy(new FluidStack(auramFluid, 1),
+                new FluidStack(cyberiumFluid, 2),
+                new FluidStack(pureFluid, 2),
+                new FluidStack(psychoniumFluid, 2),
+                new FluidStack(skyleriteFluid, 2),
+                new FluidStack(vatuuniumFluid, 2),
+                new FluidStack(emberiumFluid, 2)
+        );
+
+        registerTinkerAlloy(new FluidStack(cyberiumFluid, 4), new FluidStack(vibraniumFluid, 3), new FluidStack(ioxFluid, 1));
+        registerTinkerAlloy(new FluidStack(vatuuniumFluid, 4), new FluidStack(vibraniumFluid, 3), new FluidStack(uruFluid, 1));
+        registerTinkerAlloy(new FluidStack(pureFluid, 4), new FluidStack(vibraniumFluid, 3), new FluidStack(tritoniteFluid, 1));
         registerTinkerAlloy(new FluidStack(psychoniumFluid, 4), new FluidStack(vibraniumFluid, 3), new FluidStack(niobFluid, 1));
         registerTinkerAlloy(new FluidStack(skyleriteFluid, 4), new FluidStack(vibraniumFluid, 3), new FluidStack(adamantFluid, 1));
-        registerTinkerAlloy(new FluidStack(emberiumFluid, 3), new FluidStack(psychoniumFluid, 1), new FluidStack(skyleriteFluid, 1), new FluidStack(terraxFluid, 1));
+        registerTinkerAlloy(new FluidStack(emberiumFluid, 4), new FluidStack(vibraniumFluid, 3), new FluidStack(yrdeenFluid, 1));
 
         registerTinkerAlloy(new FluidStack(terraxFluid, 2), new FluidStack(karmesineFluid, 1), new FluidStack
                 (oviumFluid, 1), new FluidStack(jauxumFluid, 1));

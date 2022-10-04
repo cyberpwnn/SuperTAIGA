@@ -4,6 +4,48 @@
     "model": "forge:fluid"
   },
   "variants": {
+    "psychonium_fluid": [
+      {
+        "custom": {
+          "fluid": "psychonium_fluid"
+        }
+      }
+    ],
+    "pure_fluid": [
+      {
+        "custom": {
+          "fluid": "pure_fluid"
+        }
+      }
+    ],
+    "cyberium_fluid": [
+      {
+        "custom": {
+          "fluid": "cyberium_fluid"
+        }
+      }
+    ],
+    "emberium_fluid": [
+      {
+        "custom": {
+          "fluid": "emberium_fluid"
+        }
+      }
+    ],
+    "skylerite_fluid": [
+      {
+        "custom": {
+          "fluid": "skylerite_fluid"
+        }
+      }
+    ],
+    "auram_fluid": [
+      {
+        "custom": {
+          "fluid": "auram_fluid"
+        }
+      }
+    ],
     "triberium_fluid": [
       {
         "custom": {

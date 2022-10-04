@@ -76,6 +76,7 @@ public class Utils {
 
             Item item = null;
             Field[] items = Items.class.getDeclaredFields();
+            boolean registered = false;
             for (Field i : items) {
                 if (i.getName().equals(StringUtils.uncapitalize(oreSuffix) + "Ingot")) {
                     Item r = null;
@@ -86,6 +87,17 @@ public class Utils {
                     }
                     item = r;
                 }
+
+                if(item != null)
+                {
+                    registered = true;
+                    break;
+                }
+            }
+
+            if(!registered)
+            {
+                System.out.println("FAILED TO REGISTER " + (StringUtils.uncapitalize(oreSuffix) + "Ingot"));
             }
 
             material.setFluid(fluid).setCraftable(craft).setCastable(cast).addItem(item, 1, Material.VALUE_Ingot);

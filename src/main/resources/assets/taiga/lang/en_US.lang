@@ -6,6 +6,14 @@ item.pure_dust.name=Pure Dust
 item.pure_ingot.name=Pure Ingot
 fluid.tconstruct.pure_fluid.name=Pure Fluid
 
+tile.vatuunium_ore.name=Vatuunium Ore
+tile.vatuunium_block.name=Vatuunium Block
+material.vatuunium.name=Vatuunium
+item.vatuunium_nugget.name=Vatuunium Nugget
+item.vatuunium_dust.name=Vatuunium Dust
+item.vatuunium_ingot.name=Vatuunium Ingot
+fluid.tconstruct.vatuunium_fluid.name=Vatuunium Fluid
+
 tile.auram_ore.name=Auram Ore
 tile.auram_block.name=Auram Block
 material.auram.name=Auram
@@ -14,13 +22,13 @@ item.auram_dust.name=Auram Dust
 item.auram_ingot.name=Auram Ingot
 fluid.tconstruct.auram_fluid.name=Auram Fluid
 
-tile.cyberium_ore.name=Cyber Ore
-tile.cyberium_block.name=Cyber Block
-material.cyberium.name=Cyber
-item.cyberium_nugget.name=Cyber Nugget
-item.cyberium_dust.name=Cyber Dust
-item.cyberium_ingot.name=Cyber Ingot
-fluid.tconstruct.cyberium_fluid.name=Cyber Fluid
+tile.cyberium_ore.name=Cyberium Ore
+tile.cyberium_block.name=Cyberium Block
+material.cyberium.name=Cyberium
+item.cyberium_nugget.name=Cyberium Nugget
+item.cyberium_dust.name=Cyberium Dust
+item.cyberium_ingot.name=Cyberium Ingot
+fluid.tconstruct.cyberium_fluid.name=Cyberium Fluid
 
 tile.skylerite_ore.name=Skylerite Ore
 tile.skylerite_block.name=Skylerite Block
@@ -30,11 +38,14 @@ item.skylerite_dust.name=Skylerite Dust
 item.skylerite_ingot.name=Skylerite Ingot
 fluid.tconstruct.skylerite_fluid.name=Skylerite Fluid
 modifier.skystrider.name=Sky Strider
+modifier.transmuting.name=Transmuting
+modifier.lifesip.name=Life Sip
+modifier.scram.name=SCRAM!
 
 modifier.psychotic.name=Psychotic
 tile.psychonium_ore.name=Psychonium Ore
 tile.psychonium_block.name=Psychonium Block
-material.psychonium.name=Psycho
+material.psychonium.name=Psychonium
 item.psychonium_nugget.name=Psychonium Nugget
 item.psychonium_dust.name=Psychonium Dust
 item.psychonium_ingot.name=Psychonium Ingot

@@ -15,7 +15,9 @@ import static com.sosnitzka.taiga.util.Utils.registerFluid;
 public class Fluids {
 
     public static BasicTinkerFluid auramFluid = new BasicTinkerFluid("auram_fluid", 0xFF6700ff, 3050, 10,
-            10000);
+        10000);
+    public static BasicTinkerFluid vatuuniumFluid = new BasicTinkerFluid("vatuunium_fluid", 0xFFe07d19, 3050, 10,
+        10000);
     public static BasicTinkerFluid pureFluid = new BasicTinkerFluid("pure_fluid", 0xFFFFFFFF, 3050, 10,
             10000);
     public static BasicTinkerFluid cyberiumFluid = new BasicTinkerFluid("cyberium_fluid", 0xFF200845, 3050, 10,

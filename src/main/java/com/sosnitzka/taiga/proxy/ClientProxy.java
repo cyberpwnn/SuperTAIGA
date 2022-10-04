@@ -27,6 +27,7 @@ import slimeknights.tconstruct.library.client.texture.MetalTextureTexture;
 import slimeknights.tconstruct.library.materials.Material;
 
 import javax.annotation.Nonnull;
+import java.awt.*;
 import java.lang.reflect.Field;
 
 import static com.sosnitzka.taiga.Fluids.*;
@@ -37,6 +38,10 @@ import static slimeknights.tconstruct.library.utils.HarvestLevels.harvestLevelNa
 
 @SuppressWarnings("unused")
 public class ClientProxy extends CommonProxy {
+
+    public void prepre() {
+
+    }
 
     private static void registerBlockModel(Block block) {
         registerItemModel(Item.getItemFromBlock(block));
@@ -93,13 +98,14 @@ public class ClientProxy extends CommonProxy {
         else if (material.equals(uru)) metalRender(material, uruFluid.getColor(), 1.0f, 1.0f, 0.3f);
         else if (material.equals(imperomite)) metalRender(material, imperomiteFluid.getColor(), 0.4f, 1.0f, 0.7f);
         else if (material.equals(vibranium)) metalRender(material, vibraniumFluid.getColor(), 0.6f, .8f, 1f);
-        else if (material.equals(psychonium)) metalRender(material, psychoniumFluid.getColor(), 0.6f, .8f, 1f);
-        else if (material.equals(pure)) metalRender(material, pureFluid.getColor(), 0.6f, .8f, 1f);
-        else if (material.equals(emberium)) metalRender(material, emberiumFluid.getColor(), 0.6f, .8f, 1f);
-        else if (material.equals(skylerite)) metalRender(material, skyleriteFluid.getColor(), 0.6f, .8f, 1f);
-        else if (material.equals(cyberium)) metalRender(material, cyberiumFluid.getColor(), 0.6f, .8f, 1f);
-        else if (material.equals(auram)) metalRender(material, auramFluid.getColor(), 0.6f, .8f, 1f);
         else if (material.equals(valyrium)) metalRender(material, valyriumFluid.getColor(), .8f, 1.5f, -0.1f);
+        // custom
+        else if (material.equals(psychonium)) metalRender(material, psychoniumFluid.getColor(), 0.6f, .8f, 0f);
+        else if (material.equals(pure)) metalRender(material, Color.red.getRGB(), 0.8f, .8f, 10f);
+        else if (material.equals(emberium)) metalRender(material, emberiumFluid.getColor(), 0.6f, .8f, 0f);
+        else if (material.equals(skylerite)) metalRender(material, skyleriteFluid.getColor(), 0.6f, .8f, 0f);
+        else if (material.equals(cyberium)) metalRender(material, cyberiumFluid.getColor(), 0.6f, .8f, 0f);
+        else if (material.equals(auram)) metalRender(material, auramFluid.getColor(), 0.6f, .8f, 0f);
         else {
             material.setRenderInfo(new MaterialRenderInfo.BlockTexture(new ResourceLocation("taiga:blocks/block/" +
                     material.getIdentifier())));
@@ -121,6 +127,7 @@ public class ClientProxy extends CommonProxy {
     @Override
     public void registerFluidModels(Fluid fluid) {
         if (fluid == null) {
+            System.out.println("NULL FLUID!");
             return;
         }
 

@@ -15,6 +15,10 @@ import java.util.Arrays;
 import static com.sosnitzka.taiga.util.Utils.*;
 
 public class Items {
+    public static Item vatuuniumIngot = new BasicItem("vatuunium_ingot", PREFIX_INGOT);
+    public static Item vatuuniumDust = new BasicItem("vatuunium_dust", PREFIX_DUST);
+    public static Item vatuuniumNugget = new BasicItem("vatuunium_nugget", PREFIX_NUGGET);
+
     public static Item pureIngot = new BasicItem("pure_ingot", PREFIX_INGOT);
     public static Item pureDust = new BasicItem("pure_dust", PREFIX_DUST);
     public static Item pureNugget = new BasicItem("pure_nugget", PREFIX_NUGGET);

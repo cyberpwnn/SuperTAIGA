@@ -13,6 +13,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import net.minecraftforge.oredict.OreDictionary;
 import org.apache.commons.lang3.StringUtils;
+import slimeknights.tconstruct.library.TinkerRegistry;
 
 import java.lang.reflect.Field;
 import java.util.Arrays;
@@ -23,21 +24,41 @@ import static com.sosnitzka.taiga.util.Utils.PREFIX_ORE;
 import static slimeknights.tconstruct.library.utils.HarvestLevels.*;
 
 public class Blocks {
+    // Casts
+    // New Blocks
     public static Block auramBlock = new BasicBlock("auram_block", Material.ROCK, 20.0f, 3000f, VIBRANIUM,
-            PREFIX_BLOCK);
+        PREFIX_BLOCK);
+    public static Block vatuuniumBlock = new BasicBlock("vatuunium_block", Material.ROCK, 20.0f, 3000f, VIBRANIUM,
+        PREFIX_BLOCK);
     public static Block pureBlock = new BasicBlock("pure_block", Material.ROCK, 20.0f, 3000f, VIBRANIUM,
-            PREFIX_BLOCK);
+        PREFIX_BLOCK);
     public static Block cyberiumBlock = new BasicBlock("cyberium_block", Material.ROCK, 20.0f, 3000f, VIBRANIUM,
-            PREFIX_BLOCK);
-
+        PREFIX_BLOCK);
     public static Block psychoniumBlock = new BasicBlock("psychonium_block", Material.ROCK, 20.0f, 3000f, VIBRANIUM,
-            PREFIX_BLOCK);
+        PREFIX_BLOCK);
     public static Block emberiumBlock = new BasicBlock("emberium_block", Material.ROCK, 20.0f, 3000f, VIBRANIUM,
-            PREFIX_BLOCK);
+        PREFIX_BLOCK);
     public static Block skyleriteBlock = new BasicBlock("skylerite_block", Material.ROCK, 20.0f, 3000f, VIBRANIUM,
-            PREFIX_BLOCK);
+        PREFIX_BLOCK);
 
-    // blocks and ores spawned via worldgen
+    public static Block auramOre = new BasicBlock("aurorium_ore", Material.ROCK, 15.0f, 12f, COBALT, 0.2f,
+        PREFIX_ORE);
+    public static Block vatuuniumOre = new BasicBlock("aurorium_ore", Material.ROCK, 15.0f, 12f, COBALT, 0.2f,
+        PREFIX_ORE);
+    public static Block pureOre = new BasicBlock("aurorium_ore", Material.ROCK, 15.0f, 12f, COBALT, 0.2f,
+        PREFIX_ORE);
+    public static Block cyberiumOre = new BasicBlock("aurorium_ore", Material.ROCK, 15.0f, 12f, COBALT, 0.2f,
+        PREFIX_ORE);
+    public static Block psychoniumOre = new BasicBlock("aurorium_ore", Material.ROCK, 15.0f, 12f, COBALT, 0.2f,
+        PREFIX_ORE);
+    public static Block emberiumOre = new BasicBlock("aurorium_ore", Material.ROCK, 15.0f, 12f, COBALT, 0.2f,
+        PREFIX_ORE);
+    public static Block skyleriteOre = new BasicBlock("aurorium_ore", Material.ROCK, 15.0f, 12f, COBALT, 0.2f,
+        PREFIX_ORE);
+
+
+
+        // blocks and ores spawned via worldgen
     public static Block basaltBlock = new BasicBlock("basalt_block", Material.ROCK, 20.0f, 35.0f, IRON, PREFIX_BLOCK);
     public static Block tiberiumOre = new BlockTiberium();
     public static Block auroriumOre = new BasicBlock("aurorium_ore", Material.ROCK, 15.0f, 12f, COBALT, 0.2f,
@@ -58,7 +79,7 @@ public class Blocks {
     public static Block eezoOre = new BasicBlock("eezo_ore", Material.ROCK, 50.0f, 50000.0f, COBALT, PREFIX_ORE);
     public static Block abyssumOre = new BasicBlock("abyssum_ore", Material.ROCK, 15.0f, 35.0f, COBALT, PREFIX_ORE);
 
-    // Ore Castsee
+    // Ore Casts
     public static Block tiberiumBlock = new BasicBlock("tiberium_block", Material.GLASS, 10.0f, 15f, STONE, 1f,
             PREFIX_BLOCK);
     public static Block auroriumBlock = new BasicBlock("aurorium_block", Material.ROCK, 15.0f, 15f, COBALT,
@@ -166,6 +187,7 @@ public class Blocks {
 
     @SubscribeEvent
     public static void registerItems() {
+
         Field[] declaredFields = Blocks.class.getDeclaredFields(); // Gets the fields (ingots) declared above
         for (Field field : declaredFields) { // Iterates through the fields declared above
             if (java.lang.reflect.Modifier.isStatic(field.getModifiers())) { // Checks that the fields are static

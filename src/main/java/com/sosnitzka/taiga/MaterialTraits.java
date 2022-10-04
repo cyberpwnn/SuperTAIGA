@@ -40,6 +40,9 @@ public class MaterialTraits {
     public static final AbstractTrait arcane = new TraitArcane();
     public static final AbstractTrait psychotic = new TraitPsychotic();
     public static final AbstractTrait skystrider = new TraitSkyStrider();
+    public static final AbstractTrait scram = new TraitScram();
+    public static final AbstractTrait transmuting = new TraitTransmuting();
+    public static final AbstractTrait lifeSip = new TraitLifeSip();
     public static final AbstractTrait emberflame = new TraitEmberFlame();
     public static final AbstractTrait worldsmash = new TraitWorldSmash();
     public static final AbstractTrait heroic = new TraitHeroic();
@@ -69,12 +72,16 @@ public class MaterialTraits {
      * .addTrait(z)
      */
 
-    public static Material psychonium = new Material("psychonium", TextFormatting.GRAY).addTrait(psychotic, MaterialTypes.HEAD).addTrait(ecological).addTrait(naturebound);
-    public static Material emberium = new Material("emberium", TextFormatting.GRAY).addTrait(emberflame, MaterialTypes.HEAD).addTrait(worldsmash);
-    public static Material skylerite = new Material("skylerite", TextFormatting.GRAY).addTrait(skystrider, MaterialTypes.HEAD).addTrait(momentum);
-    public static Material auram = new Material("auram", TextFormatting.GRAY);
-    public static Material pure = new Material("pure", TextFormatting.GRAY);
-    public static Material cyberium = new Material("cyberium", TextFormatting.GRAY);
+    public static Material auram = new Material("auram", TextFormatting.LIGHT_PURPLE).addTrait(writable2).addTrait(scram).addTrait(skystrider).addTrait(emberflame).addTrait(ecological);
+    public static Material psychonium = new Material("psychonium", TextFormatting.DARK_BLUE).addTrait(psychotic, MaterialTypes.HEAD).addTrait(ecological).addTrait(naturebound);
+    public static Material vatuunium = new Material("vatuunium", TextFormatting.GOLD)
+        .addTrait(psychotic, MaterialTypes.HEAD)
+        .addTrait(ecological)
+        .addTrait(naturebound);
+    public static Material emberium = new Material("emberium", TextFormatting.RED).addTrait(emberflame, MaterialTypes.HEAD).addTrait(worldsmash);
+    public static Material skylerite = new Material("skylerite", TextFormatting.BLUE).addTrait(skystrider, MaterialTypes.HEAD).addTrait(momentum);
+    public static Material pure = new Material("pure", TextFormatting.OBFUSCATED).addTrait(scram, MaterialTypes.HEAD).addTrait(transmuting);
+    public static Material cyberium = new Material("cyberium", TextFormatting.DARK_PURPLE).addTrait(lifeSip, MaterialTypes.HEAD).addTrait(shocking);
 
     public static Material tiberium = new Material("tiberium", TextFormatting.GREEN).addTrait(instable);
     public static Material aurorium = new Material("aurorium", TextFormatting.RED).addTrait(arcane);
