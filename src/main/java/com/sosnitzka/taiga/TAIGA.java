@@ -5,6 +5,9 @@ import com.sosnitzka.taiga.proxy.CommonProxy;
 import com.sosnitzka.taiga.recipes.CraftingRegistry;
 import com.sosnitzka.taiga.recipes.SmeltingRegistry;
 import com.sosnitzka.taiga.world.WorldGen;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.SoundEvent;
+import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -12,6 +15,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import org.apache.logging.log4j.Logger;
 import slimeknights.tconstruct.library.MaterialIntegration;
@@ -28,7 +32,7 @@ import static slimeknights.tconstruct.library.utils.HarvestLevels.*;
 @Mod(modid = TAIGA.MODID, version = TAIGA.VERSION, guiFactory = TAIGA.GUIFACTORY, dependencies =
         "required-after:tconstruct@[1.10.2-2.5.0,);" + "required-after:mantle@[1.10.2-1.0.0,)")
 public class TAIGA {
-
+    public static SoundEvent triangulateSound;
     public static final String MODID = "taiga";
     public static final String VERSION = "1.12.2-1.3.3";
     public static final String GUIFACTORY = "com.sosnitzka.taiga.TAIGAGuiFactory";
@@ -39,6 +43,16 @@ public class TAIGA {
     public static CommonProxy proxy;
 
     public static List<MaterialIntegration> integrateList = Lists.newArrayList(); // List of materials needed to be integrated
+
+    @SubscribeEvent
+    public static void registerSounds(RegistryEvent.Register<SoundEvent> event){
+        ResourceLocation r = new ResourceLocation(MODID, "triangulate");
+        triangulateSound = new SoundEvent(r).setRegistryName(r);
+        final SoundEvent[] soundEvents = {
+            triangulateSound
+        };
+        event.getRegistry().registerAll(soundEvents);
+    }
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent e) {
@@ -99,7 +113,7 @@ public class TAIGA {
         BowMaterialStats shitty = new BowMaterialStats(0.2f, 0.4f, -1f);
 //
         integrateMaterial("Auram", auram, auramFluid, 8100, 21.62f, 21.1f, 2.8f, 750, 750, VIBRANIUM, 0.9f, 1.8f, 19);
-        integrateMaterial("Vatuunium", vatuunium, vatuuniumFluid, 4650, 11.62f, 19.65f, 1.9f, 350, 350, VIBRANIUM, 1.1f, 2.8f, 18);
+        integrateMaterial("Vatuunium", vatuunium, vatuuniumFluid, 4650, 11.62f, 0.01f, 1.9f, 350, 350, VIBRANIUM, 1.1f, 2.8f, 18);
         integrateMaterial("Pure", pure, pureFluid, 3100, 14.62f, 11.1f, 1.8f, 150, 150, VIBRANIUM, 1.1f, 1.8f, 6);
         integrateMaterial("Cyberium", cyberium, cyberiumFluid, 2200, 19.62f, 14.1f, 1.8f, 150, 150, VIBRANIUM, 1.1f, 1.8f, 14);
         integrateMaterial("Psychonium", psychonium, psychoniumFluid, 3100, 14.62f, 11.1f, 1.8f, 150, 150, VIBRANIUM, 1.1f, 1.8f, 6);

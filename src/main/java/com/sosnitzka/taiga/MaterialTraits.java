@@ -45,6 +45,7 @@ public class MaterialTraits {
     public static final AbstractTrait lifeSip = new TraitLifeSip();
     public static final AbstractTrait emberflame = new TraitEmberFlame();
     public static final AbstractTrait worldsmash = new TraitWorldSmash();
+    public static final AbstractTrait triangulation = new TraitTriangulation();
     public static final AbstractTrait heroic = new TraitHeroic();
     public static final AbstractTrait hollow = new TraitHollow();
     public static final AbstractTrait diffuse = new TraitDiffuse();
@@ -75,7 +76,7 @@ public class MaterialTraits {
     public static Material auram = new Material("auram", TextFormatting.LIGHT_PURPLE).addTrait(writable2).addTrait(scram).addTrait(skystrider).addTrait(emberflame).addTrait(ecological);
     public static Material psychonium = new Material("psychonium", TextFormatting.DARK_BLUE).addTrait(psychotic, MaterialTypes.HEAD).addTrait(ecological).addTrait(naturebound);
     public static Material vatuunium = new Material("vatuunium", TextFormatting.GOLD)
-        .addTrait(psychotic, MaterialTypes.HEAD)
+        .addTrait(triangulation, MaterialTypes.HEAD)
         .addTrait(ecological)
         .addTrait(naturebound);
     public static Material emberium = new Material("emberium", TextFormatting.RED).addTrait(emberflame, MaterialTypes.HEAD).addTrait(worldsmash);

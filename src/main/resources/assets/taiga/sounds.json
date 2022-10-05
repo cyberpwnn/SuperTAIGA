@@ -1,0 +1,10 @@
+{
+  "triangulate": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "taiga:triangulate"
+      }
+    ]
+  }
+}
